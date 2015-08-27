@@ -8,8 +8,7 @@ $senha = $_POST["senha"];
     <h1 class="text-center">Início PHP</h1>
 </div>
 <div class="row">
-    <div class="col-md-4"></div>
-    <div class="col-md-4 text-center">
+    <div class="col-md-4 col-md-offset-4">
       <?php
       if(($email == "bruno@bruno.com") AND ($senha == "123456")){
         echo "Você está logado";
@@ -18,7 +17,6 @@ $senha = $_POST["senha"];
       }
        ?>
     </div>
-    <div class="col-md-4"></div>
 </div>
 
 
