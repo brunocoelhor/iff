@@ -2,7 +2,7 @@
 require("conexao.php");
 $id = mysql_escape_string($_GET['id']);
 
-echo $id;
+//echo $id;
 
 $query = "DELETE FROM alunos WHERE (id = '".$id."')";
 // Executa a query

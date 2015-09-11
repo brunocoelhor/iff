@@ -7,7 +7,7 @@
     <div class="row">
         <div class="col-md-4"></div>
         <div class="col-md-4 box">
-          <form action="logar6.php" method="post">
+          <form action="logar.php" method="post">
             <div class="form-group">
               <label for="exampleInputEmail1">Email address</label>
               <input type="email" name="email" class="form-control" id="exampleInputEmail1" placeholder="Email">

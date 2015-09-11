@@ -7,7 +7,7 @@ $query = "SELECT * FROM alunos";
 
 $usuarios = mysqli_query($conexao, $query);
 
-//print_r($usuarios);
+print_r($usuarios);
 ?>
 <a href="alunos_form_create.php" class="btn btn-success pull-right">Cadastrar</a>
 

@@ -24,5 +24,11 @@ print_r(listar('alunos'));
 $alunos = listar('alunos');
 
 foreach($alunos as $aluno):
-  echo $aluno['nome'];
+  <tr>
+    <td><img class="img-responsive img-circle img-aluno" src="<?php echo $dado['foto']; ?>" alt="<?php echo $dado['nome']; ?>" /></td>
+    <td><?php echo $aluno['nome']; ?></td>
+    <td><?php echo $dado['turma']; ?></td>
+    <td><a href="#" class="btn btn-warning">Alterar</a></td>
+    <td><a href="alunos_delete.php?id=<?php echo $dado['id']; ?>" class="btn btn-danger">Excluir</a></td>
+  </tr>
 endforeach;

@@ -14,6 +14,7 @@ $query = "INSERT INTO  alunos (nome ,foto ,turma_id) VALUES ('".$nome."', '".$fo
 $inserir = mysqli_query($conexao, $query);
 if ($inserir) {
 echo "Aluno inserido com sucesso";
+header("Location: alunos_read.php");
 } else {
   echo "Aluno não foi inserido sucesso";
 echo mysql_error();
