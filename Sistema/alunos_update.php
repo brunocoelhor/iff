@@ -2,12 +2,7 @@
 
 include("conexao.php");
 
-$id = 3;
 
-$titulo = 'Vandalismo mata 10 mil árvores por ano no Rio de Janeiro';
-
-
-$titulo = mysql_escape_string($titulo);
 
 $query = "UPDATE alunos SET nome = '".$nome."', foto = '".$foto."' WHERE (`id` = ".$id.")";
 

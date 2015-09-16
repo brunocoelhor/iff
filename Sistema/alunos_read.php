@@ -27,7 +27,7 @@ $usuarios = mysqli_query($conexao, $query);
       <td><img class="img-responsive img-circle img-aluno" src="img/categoria/<?php echo $dado['foto']; ?>" alt="<?php echo $dado['nome']; ?>" /></td>
       <td><?php echo $dado['nome']; ?></td>
       <td><?php echo $dado['turma_id']; ?></td>
-      <td><a href="#" class="btn btn-warning">Alterar</a></td>
+      <td><a href="alunos_form_update.php?id=<?php echo $dado['id']; ?>" class="btn btn-warning">Alterar</a></td>
       <td><a href="alunos_delete.php?id=<?php echo $dado['id']; ?>" class="btn btn-danger">Excluir</a></td>
     </tr>
 
