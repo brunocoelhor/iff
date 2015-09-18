@@ -8,9 +8,9 @@ $query = "DELETE FROM alunos WHERE (id = '".$id."')";
 // Executa a query
 $deletar = mysqli_query($conexao, $query);
 if ($deletar) {
-echo "Os Alunos foram deletados com sucesso!";
-sleep(2);
-header("Location: alunos_read.php");
+echo "O Aluno foi deletado com sucesso!";
+
+
 } else {
 echo "Não foi possível deletar os alunos, tente novamente.";
 echo "Dados sobre o erro:" . mysql_error();

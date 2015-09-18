@@ -24,7 +24,7 @@ $usuarios = mysqli_query($conexao, $query);
   <?php
   while ($dado =  mysqli_fetch_array($usuarios)):?>
     <tr>
-      <td><img class="img-responsive img-circle img-aluno" src="img/categoria/<?php echo $dado['foto']; ?>" alt="<?php echo $dado['nome']; ?>" /></td>
+      <td><img class="img-responsive img-circle img-aluno" src="img/<?php echo $dado['foto']; ?>" alt="<?php echo $dado['nome']; ?>" /></td>
       <td><?php echo $dado['nome']; ?></td>
       <td><?php echo $dado['turma_id']; ?></td>
       <td><a href="alunos_form_update.php?id=<?php echo $dado['id']; ?>" class="btn btn-warning">Alterar</a></td>
@@ -55,7 +55,7 @@ $usuarios = mysqli_query($conexao, $query);
           </div>
           <div class="form-group">
             <label for="txtNome">Id da Turma</label>
-            <input type="text" name="turma_id" class="form-control" placeholder="Turma">
+            <input type="text" name="turma_id" class="form-control" placeholder="Turma" required>
           </div>
         </div>
         <div class="modal-footer">
