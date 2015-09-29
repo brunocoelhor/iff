@@ -34,7 +34,7 @@ $_SESSION['nome'] = $dados["nome"];
           header("Location: painel.php");
         }else{
           echo "<h1>Login ou senha incorretos!</h1><br>";
-                    echo "<a class='pull-right' href='login5.php'>Voltar</a>";
+                    echo "<a class='pull-right' href='login.php'>Voltar</a>";
 
         }
        ?>

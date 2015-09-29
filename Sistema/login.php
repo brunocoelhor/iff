@@ -9,11 +9,11 @@
         <div class="col-md-4 box">
           <form action="logar.php" method="post">
             <div class="form-group">
-              <label for="exampleInputEmail1">Email address</label>
-              <input type="email" name="email" class="form-control" id="exampleInputEmail1" placeholder="Email">
+              <label for="">Email</label>
+              <input type="email" name="email" class="form-control" placeholder="Email">
             </div>
             <div class="form-group">
-              <label for="exampleInputPassword1">Password</label>
+              <label for="">Password</label>
               <input type="password" name="senha" class="form-control" id="exampleInputPassword1" placeholder="Password">
             </div>
             <button type="submit" class="btn pull-right btn-dark">Submit</button>

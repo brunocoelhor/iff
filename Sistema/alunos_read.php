@@ -4,8 +4,10 @@
 
 
 $query = "SELECT * FROM alunos";
+$turmas = "SELECT * FROM turma";
 
 $usuarios = mysqli_query($conexao, $query);
+$turmas = mysqli_query($conexao, $turmas);
 
 //print_r($usuarios);
 ?>
@@ -51,12 +53,17 @@ $usuarios = mysqli_query($conexao, $query);
           </div>
           <div class="form-group">
             <label for="txtNome">Foto</label>
-            <input type="text" name="foto" class="form-control" placeholder="Foto">
+            <input type="file" name="foto" class="form-control">
           </div>
-          <div class="form-group">
-            <label for="txtNome">Id da Turma</label>
-            <input type="text" name="turma_id" class="form-control" placeholder="Turma" required>
-          </div>
+            <div class="form-group">
+              <label for="turma">Turma</label>
+              <select class="form-control">
+                <?php
+                while ($turma =  mysqli_fetch_array($turmas)):?>
+                <option value="<?php echo $turma['id']; ?>"><?php echo utf8_encode($turma['nome']); ?></option>
+                <?php endwhile ?>
+              </select>
+            </div>
         </div>
         <div class="modal-footer">
           <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>

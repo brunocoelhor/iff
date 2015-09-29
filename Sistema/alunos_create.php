@@ -6,7 +6,7 @@ $nome = mysql_escape_string($_POST['nome']);
 $foto = mysql_escape_string($_POST['foto']);
 $turma_id = mysql_escape_string($_POST['turma_id']);
 
-$query = "INSERT INTO  alunos (nome ,foto ,turma_id) VALUES ('".$nome."', '".$foto."', '".$turma_id."');";
+$query = "INSERT INTO  alunos (nome ,foto ,turma_id) VALUES ('$nome', '$foto', '$turma_id');";
 
 
 //echo $query;

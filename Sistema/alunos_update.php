@@ -17,5 +17,5 @@ header("Location: alunos_read.php");
 } else {
 echo "Não foi possível atualizar .";
 // Exibe dados sobre o erro:
-echo "Dados sobre o erro:" . mysql_error();
+echo "Dados sobre o erro:" . mysqli_error();
 }
